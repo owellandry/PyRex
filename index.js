@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-// index.js
-
 const { Command } = require('commander');
 const { createApp } = require('./modules/createApp');
 const { promptStructure } = require('./modules/promptStructure');
+const { promptLanguage } = require('./modules/promptLanguage'); // Nueva función para lenguaje
+const path = require('path');
 const { execSync } = require('child_process');
 
 const program = new Command();
@@ -14,15 +14,16 @@ program
   .command('create-pyrex-app <appName>')
   .description('Crea una nueva aplicación Pyrex')
   .action(async (appName) => {
-    await createApp(appName, promptStructure);
+    await createApp(appName, promptStructure, promptLanguage);
   });
 
 program
   .command('start')
-  .description('Inicia el servidor de desarrollo')
+  .description('Inicia el servidor en el puerto 3000')
   .action(() => {
+    const serverPath = path.join(__dirname, 'server.js');
     try {
-      execSync('node modules/server.js', { stdio: 'inherit' });
+      execSync(`node ${serverPath}`, { stdio: 'inherit' });
     } catch (error) {
       console.error('Error al iniciar el servidor:', error.message);
     }

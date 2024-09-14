@@ -1,18 +1,16 @@
-// modules/promptLanguage.js
-
 const inquirer = require('inquirer').default;
 
 async function promptLanguage() {
-  const answer = await inquirer.prompt([
+  const answers = await inquirer.prompt([
     {
       type: 'list',
       name: 'language',
-      message: '¿Qué lenguaje de programación prefieres?',
+      message: 'Elige el lenguaje de programación:',
       choices: ['javascript', 'typescript'],
     },
   ]);
 
-  return answer;
+  return answers;
 }
 
 module.exports = { promptLanguage };

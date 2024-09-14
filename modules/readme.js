@@ -1,5 +1,3 @@
-//modules/readme.md
-
 const fs = require('fs');
 const path = require('path');
 

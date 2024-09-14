@@ -8,12 +8,6 @@ async function promptStructure() {
       message: 'Elige la estructura del proyecto:',
       choices: ['src', 'app', 'page'],
     },
-    {
-      type: 'list',
-      name: 'language',
-      message: 'Elige el lenguaje del proyecto:',
-      choices: ['JavaScript', 'TypeScript'],
-    },
   ]);
 
   return answers;
