@@ -1,0 +1,204 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total */
+}
+
+body {
+    background-color: #f3e296;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: #fff;
+    margin: 30px 40px 0px 30px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 0px 0px black;
+    border: 5px black solid;
+    transition: background-color 0.3s ease;
+}
+
+.Navbar:hover {
+    background-color: #f4f4f4;
+}
+
+.Navbar-Logo {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.Navbar a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.Navbar a:hover {
+    color: #007bff;
+}
+
+/* Contenido principal */
+.content-sub {
+    width: 100%;
+    display: flex;
+}
+
+.content-right,
+.content-left {
+    padding: 20px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.content-left {
+    width: 100%;
+    max-width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 50px 0px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 0px 0px black;
+    border: 5px black solid;
+}
+
+.content-left:hover {
+    transform: scale(1.05);
+    background-color: #ace7ff;
+    cursor: pointer;
+}
+
+.content-left-img {
+    width: 80%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.content-left-img:hover {
+    transform: scale(1.1);
+}
+
+.content-left-text {
+    padding: 20px;
+}
+
+.content-right {
+    width: 100%;
+    max-width: 50%;
+    margin: 20px 10px;
+}
+
+.content-right-title {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.content-right-card-1,
+.content-right-card-2 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px 0px black;
+    border: 5px black solid;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.content-right-card-1:hover,
+.content-right-card-2:hover {
+    background-color: #ace7ff;
+    transform: scale(1.02);
+    cursor: pointer;
+    
+}
+
+.content-right-card-2 {
+    font-size: 45px;
+    padding: 30px;
+}
+
+.content-right-card-2-text {
+    font-size: 35px;
+}
+
+/* Consultas de medios para pantallas pequeñas */
+
+@media (max-width: 850px) {
+
+    .content-sub {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Navbar {
+        margin: 30px 40px 0px 30px;
+    }
+
+    .content-left {
+        max-width: 80%;
+    }
+
+    .content-right{
+        max-width: 90%;
+    }
+
+    .content-left {
+        margin: 20px;
+    }
+
+    .content-left-img {
+        width: 70%;
+    }
+
+    .content-right-title {
+        font-size: 66px;
+    }
+
+    .content-right-card-2-text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Navbar {
+        margin: 10px;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .content-left,
+    .content-right {
+        margin: 10px;
+    }
+
+    .content-left-img {
+        width: 50%;
+    }
+
+    .content-right-title {
+        font-size: 48px;
+    }
+
+    .content-right-card-2-text {
+        font-size: 28px;
+    }
+}
