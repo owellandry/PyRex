@@ -1,0 +1,16 @@
+{
+  "name": "pyrex-cli",
+  "version": "1.0.0",
+  "bin": {
+    "pyx": "./index.js"
+  },
+  "description": "PyRex es un frameworks para nuevos programadores sin mucho conocimientos",
+  "main": "index.js",
+  "repository": "https://github.com/owellandry/PyRex.git",
+  "author": "owell andry <owellandry10@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "inquirer": "^10.2.2"
+  }
+}
