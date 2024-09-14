@@ -1,0 +1,16 @@
+{
+  "name": "pyrex",
+  "version": "1.0.0",
+  "description": "Pyre",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^4.0.0",
+    "ws": "^8.18.0"
+  }
+}
