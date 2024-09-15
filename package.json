@@ -1,5 +1,5 @@
 {
- "name": "pyx-icon",
+  "name": "pyx-icon",
   "displayName": "pyx icon",
   "description": "Extensión para asignar un ícono personalizado a archivos con extensión .pyx",
   "version": "1.2.0",
@@ -9,7 +9,8 @@
     "vscode": "^1.63.0"
   },
   "activationEvents": [
-    "onIdentity:identity"
+    "onLanguage:pyx",
+    "onStartupFinished"
   ],
   "scripts": {
     "build": "tsc && node ./out/extension.js",
@@ -21,6 +22,21 @@
     "Themes"
   ],
   "contributes": {
+    "languages": [
+      {
+        "id": "pyx",
+        "aliases": ["pyx", "PyX"],
+        "extensions": [".pyx"],
+        "configuration": "./syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pyx",
+        "scopeName": "source.pyx",
+        "path": "./syntaxes/pyx.tmLanguage.json"
+      }
+    ],
     "iconThemes": [
       {
         "id": "icons",
