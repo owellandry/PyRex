@@ -1,8 +1,8 @@
 {
   "name": "Pyrex",
-  "displayName": "Ryrex",
+  "displayName": "Pyrex",
   "description": "Extensión para asignar un ícono personalizado a archivos con extensión .pyx junto con su funcionamiento y reconocimineto de archivos .pyx",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "publisher": "pyrex-dev",
   "main": "./out/extension.js",
   "engines": {
