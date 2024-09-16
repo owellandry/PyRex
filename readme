@@ -1,0 +1,19 @@
+/zorix
+  /src
+    /components
+      Component.ts
+      MyComponent.ts
+    /core
+      Renderer.ts
+      StateManager.ts
+    /utils
+      utils.ts
+  /dist
+  /examples
+    index.html
+    app.ts
+  /tests
+    Component.test.ts
+  package.json
+  tsconfig.json
+  README.md
