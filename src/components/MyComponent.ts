@@ -1,9 +1,4 @@
-import { Component } from './Component';
-
-export class MyComponent extends Component {
-  render(): HTMLElement {
-    const el = super.render();
-    el.innerHTML = 'MyComponent content';
-    return el;
-  }
+// Código de ejemplo para un componente adicional
+export function MyComponent() {
+    return `<p>This is my component!</p>`;
 }

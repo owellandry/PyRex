@@ -1,9 +1,3 @@
-import { Renderer } from '../core/Renderer';
-
-export class Component {
-  private renderer = new Renderer();
-
-  render(): HTMLElement {
-    return this.renderer.render('div', 'Component content');
-  }
+export function renderApp(container: HTMLElement) {
+  container.innerHTML = `<h1>Welcome to Zorix!</h1>`;
 }
