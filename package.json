@@ -1,12 +1,32 @@
 {
-  "name": "pyrex",
+  "name": "@pyrex/image",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/Img.js",
+  "types": "dist/Img.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "pyrex",
+    "pyrex-img",
+    "components",
+    "img"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "pyrex-dev",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/prop-types": "^15.7.12",
+    "@types/react": "^18.3.5",
+    "react": "^18.3.1",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5"
+  }
 }
